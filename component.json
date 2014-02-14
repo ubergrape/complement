@@ -1,0 +1,15 @@
+{
+  "name": "complement",
+  "version": "0.0.1",
+  "description": "shared methods for autocomplete and textcomplete",
+  "dependencies": {
+    "component/domify": "*",
+    "component/emitter": "*",
+    "component/tap-event": "*",
+    "component/clickable": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}
