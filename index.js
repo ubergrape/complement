@@ -153,3 +153,8 @@ exports.get = function (x) {
       return option
   }
 }
+
+function stop(e) {
+  e.preventDefault()
+  e.stopPropagation()
+}
