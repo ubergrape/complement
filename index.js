@@ -19,16 +19,12 @@ exports._onblur = function () {
   var menu = this.menu
 
   document.addEventListener('click', hide, false)
-  document.addEventListener('touchstart', hide, false)
-  document.addEventListener('focus', hide, true)
 
   function hide(e) {
     // autocleanup if the element is removed from the document
     // apparently IE11 doesn't like `document.contains()`
     if (!document.body.contains(el)) {
       document.removeEventListener('click', hide, false)
-      document.removeEventListener('touchstart', hide, false)
-      document.removeEventListener('focus', hide, true)
       return
     }
 
@@ -53,7 +49,6 @@ exports._setupoptions = function () {
   var menu = this.menu
 
   // set an option when the user clicks it or taps it
-  menu.addEventListener('touchstart', tap(click), false)
   menu.addEventListener('click', click, false)
 
   function click(e) {
