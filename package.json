@@ -1,0 +1,13 @@
+{
+  "name": "complement",
+  "version": "0.0.2",
+  "description": "shared methods for autocomplete and textcomplete",
+  "dependencies": {
+    "domify": "npmcomponent/component-domify",
+    "emitter": "npmcomponent/component-emitter",
+    "tap-event": "npmcomponent/component-tap-event",
+    "clickable": "npmcomponent/component-clickable"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}
