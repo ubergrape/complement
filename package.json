@@ -3,10 +3,15 @@
   "version": "0.0.2",
   "description": "shared methods for autocomplete and textcomplete",
   "dependencies": {
-    "domify": "npmcomponent/component-domify",
-    "emitter": "npmcomponent/component-emitter",
-    "tap-event": "npmcomponent/component-tap-event",
-    "clickable": "npmcomponent/component-clickable"
+    "domify": "git://github.com/component/domify",
+    "component-emitter": "*",
+    "component-tap-event": "git://github.com/npmcomponent/component-tap-event.git",
+    "component-clickable": "git://github.com/npmcomponent/component-clickable"
+  },
+  "browser": {
+    "emitter": "component-emitter",
+    "tap-event": "component-tap-event",
+    "clickable": "component-clickable"
   },
   "main": "index.js",
   "license": "MIT"
